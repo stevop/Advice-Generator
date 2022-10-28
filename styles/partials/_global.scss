@@ -3,9 +3,32 @@
 }
 
 body{
+    background-color: var(--dark-blue);
     font-size: 28px;
     font-family: 'Manrope', sans-serif;
     font-weight: 800;
+    height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+}
+// ADVICE BODY
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#advice-id{
+    color: var(--neon-green);
+    font-family: inherit;
+    font-size: inherit;
+    text-transform: uppercase;
+}
+
+#advice-text{
+    color: var(--light-cyan);
+    font-family: inherit;
 }
 
 // ATTRIBUTION
