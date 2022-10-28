@@ -9,6 +9,7 @@ body{
     font-weight: 800;
     height: 100vh;
     overflow: hidden;
+    position: relative;
     width: 100vw;
 }
 // ADVICE BODY
@@ -17,20 +18,63 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    max-width: 375px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wrapper{
+    background-color: var(--dark-grayish-blue);
+    border-radius: .8rem;
+    position: relative;
+    width: 100%;
 }
 
 #advice-id{
     color: var(--neon-green);
     font-family: inherit;
     font-size: inherit;
+    text-align: center;
     text-transform: uppercase;
 }
 
 #advice-text{
     color: var(--light-cyan);
     font-family: inherit;
+    text-align: center;
+}
+
+.divider{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 3rem;
+}
+
+.dice{
+    cursor: pointer;
+    position: absolute;
+    bottom: -11px;
+    left: 47%;
+    z-index: 10;
+}
+
+svg{
+    cursor: pointer;
+    position: absolute;
+    bottom: -28px;
+    left: 37%;
 }
 
 // ATTRIBUTION
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    bottom: 0;
+    font-size: 11px; 
+    position: absolute;
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
