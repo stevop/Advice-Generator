@@ -1,6 +1,15 @@
+const dice = document.querySelector(".dice");
+const p = document.querySelector("#advice-text");
+
+// FETCHING DATA
 const getAdvice = async () => {
-    const res = await axios.get("https://api.adviceslip.com/advice");
-    console.log(res)
+    let res = await axios.get("https://api.adviceslip.com/advice");
+    return res.data.slip.advice;
 }
 
-getAdvice()
+ // CLICK TO DICE
+ dice.addEventListener("click", async function(){
+    let adviceGetter = await getAdvice();
+    p.innerHTML = "";
+    p.textContent = `"${adviceGetter}"`;
+ });
