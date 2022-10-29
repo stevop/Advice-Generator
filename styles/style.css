@@ -83,7 +83,7 @@ svg {
   transform: translate(-50%);
   transition: 0.3s filter linear;
 }
-svg:hover, svg:focus {
+svg:hover, svg:focus, svg:active {
   filter: drop-shadow(0px 0px 10px var(--neon-green));
 }
 
