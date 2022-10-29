@@ -60,13 +60,16 @@ body{
     margin-right: auto;
     margin-left: auto;
     padding-bottom: 3rem;
+    width: 100%;
+    height: auto;
 }
 
 .dice{
     cursor: pointer;
     position: absolute;
     bottom: -11px;
-    left: 47%;
+    left: 50%;
+    transform: translate(-50%);
     z-index: 10;
 
     @media (min-width: 1200px){
@@ -77,8 +80,9 @@ body{
 svg{
     cursor: pointer;
     position: absolute;
-    bottom: -28px;
-    left: 37%;
+    bottom: -38px;
+    left: 50%;
+    transform: translate(-50%);
     transition: 0.3s filter linear;
 
     &:hover, &:focus{
