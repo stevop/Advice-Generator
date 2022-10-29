@@ -22,6 +22,11 @@ body{
     max-width: 375px;
     margin-right: auto;
     margin-left: auto;
+
+    @media (min-width: 1200px){
+        min-width: 650px;
+
+    }
 }
 
 .wrapper{
@@ -62,13 +67,22 @@ body{
     bottom: -11px;
     left: 47%;
     z-index: 10;
+
+    @media (min-width: 1200px){
+        left: 315px;
+    }
 }
 
 svg{
     cursor: pointer;
+    filter: drop-shadow(0px 0px 10px var(--neon-green));
     position: absolute;
     bottom: -28px;
     left: 37%;
+
+    @media (min-width: 1200px){
+        left: 277px;
+    }
 }
 
 // ATTRIBUTION
