@@ -74,11 +74,6 @@ body {
   transform: translate(-50%);
   z-index: 10;
 }
-@media (min-width: 1200px) {
-  .dice {
-    left: 315px;
-  }
-}
 
 svg {
   cursor: pointer;
@@ -90,11 +85,6 @@ svg {
 }
 svg:hover, svg:focus {
   filter: drop-shadow(0px 0px 10px var(--neon-green));
-}
-@media (min-width: 1200px) {
-  svg {
-    left: 277px;
-  }
 }
 
 .attribution {
