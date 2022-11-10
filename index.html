@@ -1,38 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <link rel="stylesheet" href="styles/style.css">
-  <title>Frontend Mentor | Advice generator app</title>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png" />
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<link rel="stylesheet" href="styles/style.css" />
+		<title>Frontend Mentor | Advice generator app</title>
+	</head>
+	<body>
+		<article class="container">
+			<section class="wrapper">
+				<h1 id="advice-id">Advice #118</h1>
+				<p id="advice-text">
+					"A common regret in life is wishing one hadn't worked so hard."
+				</p>
 
-</head>
-<body>
-<article class="container">
-  
-    <section class="wrapper">
-      <h1 id="advice-id">Advice #118</h1>
-      <p id="advice-text">"A common regret in life is wishing one hadn't worked so hard."</p>
-      
-      <picture>
-        <source media="(min-width: 1200px)" srcset="./images/pattern-divider-desktop.svg">
-        <img class="divider" src="./images/pattern-divider-mobile.svg" alt="divider">
-      </picture>
-      <img class="dice" src="./images/icon-dice.svg" alt="dice">
-      <svg width='80' height='80'>
-        <circle cx='40' cy='40' r='30' fill='#52ffa8'></circle>
-     </svg>
-    </section>
-    
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="https://github.com/stevop">StevoP</a>.
-    </div>
-</article>
+				<picture>
+					<source
+						media="(min-width: 1200px)"
+						srcset="./images/pattern-divider-desktop.svg" />
+					<img
+						class="divider"
+						src="./images/pattern-divider-mobile.svg"
+						alt="divider" />
+				</picture>
+				<img class="dice" src="./images/icon-dice.svg" alt="dice" />
+				<svg width="80" height="80">
+					<circle cx="40" cy="40" r="30" fill="#52ffa8"></circle>
+				</svg>
+			</section>
 
-  <script src="app.js"></script>
-</body>
+			<div class="attribution">
+				Challenge by
+				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+					>Frontend Mentor</a
+				>. Coded by <a href="https://github.com/stevop">StevoP</a>.
+			</div>
+		</article>
+
+		<script src="app.js"></script>
+	</body>
 </html>

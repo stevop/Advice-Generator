@@ -1,116 +1,121 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-  background-color: var(--dark-blue);
-  font-size: 28px;
-  font-family: "Manrope", sans-serif;
-  font-weight: 800;
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	background-color: var(--dark-blue);
+	font-size: 28px;
+	font-family: "Manrope", sans-serif;
+	font-weight: 800;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .container {
-  max-width: 375px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 1rem;
+	max-width: 375px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0 1rem;
 }
 @media (min-width: 1200px) {
-  .container {
-    min-width: 650px;
-  }
+	.container {
+		min-width: 650px;
+	}
 }
 
 .wrapper {
-  background-color: var(--dark-grayish-blue);
-  border-radius: 0.8rem;
-  padding: 2rem;
-  position: relative;
-  width: 100%;
+	background-color: var(--dark-grayish-blue);
+	border-radius: 0.8rem;
+	padding: 2rem;
+	position: relative;
+	width: 100%;
 }
 
 #advice-id {
-  color: var(--neon-green);
-  font-family: sans-serif;
-  font-size: 0.75rem;
-  letter-spacing: 0.25rem;
-  text-align: center;
-  text-transform: uppercase;
+	color: var(--neon-green);
+	font-family: sans-serif;
+	font-size: 0.75rem;
+	letter-spacing: 0.25rem;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 #advice-text {
-  color: var(--light-cyan);
-  font-family: inherit;
-  margin-top: 1rem;
-  text-align: center;
+	color: var(--light-cyan);
+	font-family: inherit;
+	margin-top: 1rem;
+	text-align: center;
 }
 
 .divider {
-  display: block;
-  margin-top: 2rem;
-  margin-right: auto;
-  margin-left: auto;
-  padding-bottom: 3rem;
-  width: 100%;
-  height: auto;
+	display: block;
+	margin-top: 2rem;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 3rem;
+	width: 100%;
+	height: auto;
 }
 
 .dice {
-  cursor: pointer;
-  position: absolute;
-  bottom: -11px;
-  left: 50%;
-  transform: translate(-50%);
-  z-index: 10;
+	cursor: pointer;
+	position: absolute;
+	bottom: -11px;
+	left: 50%;
+	transform: translate(-50%);
+	z-index: 10;
 }
 
 svg {
-  cursor: pointer;
-  position: absolute;
-  bottom: -38px;
-  left: 50%;
-  transform: translate(-50%);
-  transition: 0.3s filter linear;
+	cursor: pointer;
+	position: absolute;
+	bottom: -38px;
+	left: 50%;
+	transform: translate(-50%);
+	transition: 0.3s -webkit-filter linear;
+	transition: 0.3s filter linear;
+	transition: 0.3s filter linear, 0.3s -webkit-filter linear;
 }
-svg:hover, svg:focus, svg:active {
-  filter: drop-shadow(0px 0px 10px var(--neon-green));
+svg:hover,
+svg:focus,
+svg:active {
+	-webkit-filter: drop-shadow(0px 0px 10px var(--neon-green));
+	        filter: drop-shadow(0px 0px 10px var(--neon-green));
 }
 
 .attribution {
-  color: var(--light-cyan);
-  display: block;
-  font-family: inherit;
-  font-size: 11px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%);
+	color: var(--light-cyan);
+	display: block;
+	font-family: inherit;
+	font-size: 11px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%);
 }
 
 .attribution a {
-  color: var(--neon-green);
-  cursor: pointer;
-  text-decoration: none;
+	color: var(--neon-green);
+	cursor: pointer;
+	text-decoration: none;
 }
 
 :root {
-  --light-cyan: hsl(193, 38%, 86%);
-  --neon-green: hsl(150, 100%, 66%);
-  --grayish-blue: hsl(217, 19%, 38%);
-  --dark-grayish-blue: hsl(217, 19%, 24%);
-  --dark-blue: hsl(218, 23%, 16%);
-}/*# sourceMappingURL=style.css.map */
+	--light-cyan: hsl(193, 38%, 86%);
+	--neon-green: hsl(150, 100%, 66%);
+	--grayish-blue: hsl(217, 19%, 38%);
+	--dark-grayish-blue: hsl(217, 19%, 24%);
+	--dark-blue: hsl(218, 23%, 16%);
+}
